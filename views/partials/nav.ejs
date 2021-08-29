@@ -1,0 +1,92 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    
+    <!-- Logo -->
+    <a class="navbar-brand" href="/">
+        <img src="img/logo-a.png" alt="Esperanza Logo" class="img-fluid" width="30px">
+    </a>
+    <!-- Logo -->
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-4">
+
+        <li class="nav-item">
+          <a class="nav-link px-3" aria-current="page" href="/">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link px-3" href="#about">Quienes somos</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link px-3 dropdown-toggle" href="#services" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Servicios
+          </a>
+          <ul class="dropdown-menu fs-4" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#masajes">Masajes</a></li>
+            <li><a class="dropdown-item" href="#faciales">Faciales</a></li>
+            <li><a class="dropdown-item" href="#depilacion">Depilación</a></li>
+            <li><a class="dropdown-item" href="#pestañas-cejas">Pestañas y Cejas</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link px-3" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">Citas</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link px-3" href="https://www.google.com/maps/place/17%C2%B030'37.2%22N+99%C2%B028'06.1%22W/@17.5103463,-99.4688942,19z/data=!3m1!4b1!4m6!3m5!1s0x0:0x0!7e2!8m2!3d17.5103448!4d-99.4683467">Ubicación</a>
+        </li>
+
+      </ul>
+      <div class="d-flex">
+        <a href="https://www.facebook.com/esperanzachilpo"> <i class="px-2 bi bi-facebook" style="font-size: 2rem; color: cornflowerblue;"></i></a>
+        <a href="https://api.whatsapp.com/send?phone=525623802147&text=Hola!%20Quiero%20agendar%20una%20cita"> <i class="px-2 bi bi-whatsapp" style="font-size: 2rem; color: cornflowerblue;"></i></a>
+        <a href="https://www.facebook.com/messages/t/106178895120748"> <i class="px-2 bi bi-messenger disabled" style="font-size: 2rem; color: cornflowerblue;"></i></a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Programa tu cita</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <form action="">
+
+                <div class="modal-body">          
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Nombre completo</label>
+                        <input required type="email" class="form-control" id="nombre">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Teléfono</label>
+                        <input required type="email" class="form-control" id="telefono">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Fecha</label>
+                        <input required type="datetime-local" class="form-control" id="fecha">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-primary">Agendar cita</button>
+                </div>
+
+        </form>
+
+        </div>
+    </div>
+</div>
