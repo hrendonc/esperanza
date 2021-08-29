@@ -10,10 +10,10 @@
 <!-- carousel -->
 <%- include('partials/carousel') %>
 
-<main>
+<main id="about">
 
     <!-- About Us -->
-    <section class="bg-success text-dark bg-opacity-10 py-5" id="about">
+    <section class="bg-success text-dark bg-opacity-10 py-5">
         <div class="container">
             <h2 class="display-4 text-center text-primary"><b>¿QUIENES SOMOS?</b></h2>
             <div class="row">
@@ -25,7 +25,7 @@
             </div>
             <div class="row">                  
                 <div class="col">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae voluptates molestiae maxime iste culpa sint, sequi rerum dolorum ullam laboriosam corrupti odit, eius eveniet velit nihil tempore quaerat non repellat.
+                    <p class="text-sm-start">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae voluptates molestiae maxime iste culpa sint, sequi rerum dolorum ullam laboriosam corrupti odit, eius eveniet velit nihil tempore quaerat non repellat.
                     Maxime doloribus aliquid, labore ipsa velit ratione officia commodi, delectus est, eveniet quisquam consequuntur aperiam! Exercitationem, doloremque. Eligendi cumque, aliquam, blanditiis amet fuga obcaecati perferendis debitis repellendus nesciunt veritatis facere.</p>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas repellendus minus fuga. Ipsa, aut voluptates! Cupiditate mollitia temporibus maiores aut, obcaecati deserunt placeat vel provident. Earum recusandae dicta perferendis temporibus.</p>
                 </div>
@@ -41,14 +41,16 @@
                 <div class="container">
                     <div class="col-12 text-center">
                         <h2 class="display-4"><b>S E R V I C I O S</b></h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam accusamus, animi reprehenderit architecto ipsum, ex accusantium exercitationem iusto unde laudantium minus dicta doloribus facilis saepe error molestiae eos enim at.</p>
+                        
+                        <p class="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam accusamus, animi reprehenderit architecto ipsum, ex accusantium exercitationem iusto unde laudantium minus dicta doloribus facilis saepe error molestiae eos enim at.</p>
+                        <i class="bi bi-star-fill px-1"></i> 
                         <i class="bi bi-star-fill px-1"></i>
                         <i class="bi bi-star-fill px-1"></i>
                         <i class="bi bi-star-fill px-1"></i>
-                        <i class="bi bi-star-fill px-1"></i>
-                        <i class="bi bi-star-fill px-1"></i>
+                        <i class="bi bi-star-fill px-1" id="masajes"></i>  <!-- ID Masajes-->
+                        
                     </div>
-                </div>
+                </div>                
                 
             </div>
 
@@ -57,10 +59,10 @@
 
             <div class="container-fluid bg-primary text-dark bg-opacity-10 pt-5 pb-3">
                 <div class="container-sm">
-                    <div class="row" id="masajes">
+                    <div class="row">
                         <div class="col-12 text-center">
                             <h2 class="display-6"><b>Masajes</b></h2>
-                            <p class="fw-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam accusamus, animi reprehenderit architecto ipsum, ex accusantium exercitationem iusto unde laudantium minus dicta doloribus facilis saepe error molestiae eos enim at.</p>
+                            <p class="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam accusamus, animi reprehenderit architecto ipsum, ex accusantium exercitationem iusto unde laudantium minus dicta doloribus facilis saepe error molestiae eos enim at.</p>
                         </div>
                     </div> 
     
@@ -75,7 +77,7 @@
                                     <p class="fw-lighter">Estimula la circulación sanguínea, ayuda a descontracturar los músculos y descarga la tensión que se acumula en ellos.</p>
                                 </div>
                                 <div class="d-grid gap-2 col-6 mx-auto align-items-end mb-3">
-                                    <button type="button" class="btn btn-outline-info btn-sm">Más Información</button>
+                                    <button type="button" class="btn btn-outline-info btn-sm" data-bs-toggle="modal" data-bs-target="#bmrccl">Más Información</button>
                                 </div>
                             </div>
                         </div>
@@ -88,7 +90,9 @@
                                     <h6 class="card-title text-secondary"><b>$300.00</b></h5>
                                     <p class="fw-lighter">Estimula la circulación sanguínea, ayuda a descontracturar los músculos y descarga la tensión que se acumula en ellos.</p>
                                 </div>
-                                <button type="button" class="btn btn-outline-info btn-sm ">Más Información</button>
+                                <div class="d-grid gap-2 col-6 mx-auto align-items-end mb-3">
+                                    <button type="button" class="btn btn-outline-info btn-sm" data-bs-toggle="modal" data-bs-target="#mr">Más Información</button>
+                                </div>
                             </div>
                         </div>
     
@@ -101,7 +105,7 @@
                                     <p class="fw-lighter">Este tratamiento estético favorece la oxigenación del cuerpo y disminuye la tensión sanguínea.</p>
                                 </div>
                                 <div class="d-grid gap-1 col-6 mx-auto align-items-end mb-3">
-                                    <button type="button" class="btn btn-outline-info btn-sm">Más Información</button>
+                                    <button type="button" class="btn btn-outline-info btn-sm" data-bs-toggle="modal" data-bs-target="#prstrp" id="faciales">Más Información</button>
                                 </div>
                             </div>
                         </div>
@@ -111,16 +115,15 @@
             </div>
             
 
-
             <!-- Faciales -->
 
             <div class="bg-danger text-dark bg-opacity-10">
 
                 <div class="container-md p-3">
-                    <div class="row" id="faciales">
+                    <div class="row">
                         <div class="col-12 text-center">
                             <h2 class="display-6"><b>Faciales</b></h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam accusamus, animi reprehenderit architecto ipsum, ex accusantium exercitationem iusto unde laudantium minus dicta doloribus facilis saepe error molestiae eos enim at.</p>
+                            <p class="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam accusamus, animi reprehenderit architecto ipsum, ex accusantium exercitationem iusto unde laudantium minus dicta doloribus facilis saepe error molestiae eos enim at.</p>
                         </div>
                     </div>            
     
@@ -134,7 +137,7 @@
                                     <h6 class="card-title text-secondary"><b>$250.00</b></h5>
                                     <!--<p class="fw-lighter">Estimula la producción de manera acelerada de nuestro colágeno interno para una mayor elasticidad de la piel.</p>-->
                                 </div>
-                                    <button type="button" class="btn btn-outline-info fw-light m-2">Más Información</button>
+                                <button type="button" class="btn btn-outline-info btn-sm p-0 m-2" data-bs-toggle="modal" data-bs-target="#rf3d">Más Información</button>                                
                             </div>
                         </div>
     
@@ -146,7 +149,7 @@
                                     <h6 class="card-title text-secondary"><b>$200.00</b></h5>
                                     <!--<p class="fw-lighter">Devuelve el equilibrio de la piel, aumenta la hidratación en profundidad, revitaliza, reduce la inflamación y el enrojecimiento, anti-acné y reduce el tamaño de poros.</p>-->
                                 </div>
-                                    <button type="button" class="btn btn-primary">Más Información</button>
+                                <button type="button" class="btn btn-outline-info btn-sm p-0 m-2" data-bs-toggle="modal" data-bs-target="#bfml">Más Información</button>
                             </div>
                         </div>
     
@@ -158,9 +161,7 @@
                                     <h6 class="card-title text-secondary"><b>$100.00</b></h5>
                                     <!--<p class="fw-lighter">Una dermis limpia lucirá más bonita, joven y suave. Es fundamental mantener el hábito de eliminar las células muertas y la suciedad del rostro para evitar arrugas, granitos o que se vea opaca.</p>-->
                                 </div>
-                                <div class="d-grid gap-2 col-6 mx-auto align-items-end mb-3">
-                                    <button type="button" class="btn btn-outline-info btn-sm fw-light">Más Información</button>
-                                </div>
+                                <button type="button" class="btn btn-outline-info btn-sm p-0 m-2" data-bs-toggle="modal" data-bs-target="#mlf" id="depilacion">Más Información</button>
                             </div>
                         </div>
                     </div>
@@ -173,10 +174,10 @@
 
             <div class="bg-primary text-dark bg-opacity-10">
                 <div class="container-md p-3">
-                    <div class="row" id="depilacion">
+                    <div class="row">
                         <div class="col-12 text-center">
                             <h2 class="display-6"><b>Depilación</b></h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam accusamus, animi reprehenderit architecto ipsum, ex accusantium exercitationem iusto unde laudantium minus dicta doloribus facilis saepe error molestiae eos enim at.</p>
+                            <p class="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam accusamus, animi reprehenderit architecto ipsum, ex accusantium exercitationem iusto unde laudantium minus dicta doloribus facilis saepe error molestiae eos enim at.</p>
                         </div>
                     </div> 
 
@@ -187,18 +188,10 @@
                                 <div class="card-body">
                                     <h6 class="card-title text-primary">Depilación</h4>
                                     <h6 class="card-title text-secondary"><b>Desde $80.00</b></h5>
-                                    <!--<p class="fw-lighter">
-                                        <ul>
-                                            <li>Cara</li>
-                                            <li>Axilas</li>                                    
-                                            <li>Piernas</li>
-                                        </ul>
-                                        (Los precios pueden variar de acuerdo al servicio que requiera el cliente
-                                    </p>-->
-                                    <button type="button" class="btn btn-outline-info fw-lighter">Más Información</button>
-                                </div>                                                                                                                                            
+                                </div>    
+                                <button type="button" class="btn btn-outline-info btn-sm p-0 m-2" data-bs-toggle="modal" data-bs-target="#dplcn" id="pestañas-cejas">Más Información</button>                                                                                                                                        
                             </div>
-                        </div>        
+                        </div> 
                     </div>
                 </div>     
 
@@ -208,12 +201,12 @@
             <!-- Pestañas y Cejas -->
 
 
-            <div class="bg-secondary text-dark bg-opacity-10">
+            <div class="bg-secondary text-dark bg-opacity-10 pb-5">
                 <div class="container-md p-3">
-                    <div class="row" id="pestañas-cejas">
+                    <div class="row">
                         <div class="col-12 text-center">
                             <h2 class="display-6"><b>Pestañas y Cejas</b></h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam accusamus, animi reprehenderit architecto ipsum, ex accusantium exercitationem iusto unde laudantium minus dicta doloribus facilis saepe error molestiae eos enim at.</p>
+                            <p class="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam accusamus, animi reprehenderit architecto ipsum, ex accusantium exercitationem iusto unde laudantium minus dicta doloribus facilis saepe error molestiae eos enim at.</p>
                         </div>
                     </div>
         
@@ -226,8 +219,8 @@
                                     <h6 class="card-title text-primary">Pestañas clásicas</h4>
                                     <h6 class="card-title text-secondary"><b>$200.00</b></h5>
                                     <!--<p class="fw-lighter">La técnica de extensiones de pestañas clásicas consiste en aplicar una sola extensión de pestaña a una pestaña natural.</p>-->
-                                    <button type="button" class="btn btn-outline-info fw-lighter">Más Información</button>
                                 </div>
+                                <button type="button" class="btn btn-outline-info btn-sm p-0 m-2" data-bs-toggle="modal" data-bs-target="#pc">Más Información</button>
                             </div>
                         </div>
         
@@ -238,8 +231,8 @@
                                     <h6 class="card-title text-primary">Pestañas hibridas</h4>
                                     <h6 class="card-title text-secondary"><b>$300.00</b></h5>
                                     <!--<p class="fw-lighter">Las pestañas híbridas son una combinación de dos técnicas: pestañas con volumen ( SVS o rusas ) y extensiones de pestañas individuales clásicas.</p>-->
-                                    <button type="button" class="btn btn-outline-info fw-lighter">Más Información</button>
                                 </div>
+                                <button type="button" class="btn btn-outline-info btn-sm p-0 m-2" data-bs-toggle="modal" data-bs-target="#ph">Más Información</button>
                             </div>
                         </div>
         
@@ -250,8 +243,8 @@
                                     <h6 class="card-title text-primary">Microshading</h4>
                                     <h6 class="card-title text-secondary"><b>$1,500.00</b></h5>
                                     <!--<p class="fw-lighter">Este método consiste en 'sombrear' las cejas, dándoles un aspecto de ceja maquillada, se utiliza para lograr un efecto sombreado y más intenso.</p>-->
-                                    <button type="button" class="btn btn-outline-info fw-lighter">Más Información</button>
                                 </div>
+                                <button type="button" class="btn btn-outline-info btn-sm p-0 m-2" data-bs-toggle="modal" data-bs-target="#mcrsdng">Más Información</button>
                             </div>
                         </div>
         
@@ -262,8 +255,8 @@
                                     <h6 class="card-title text-primary">Microblading</h4>
                                     <h6 class="card-title text-secondary"><b>$2,000.00</b></h5>
                                     <!--<p class="fw-lighter">Es una técnica de maquillaje para cejas que se realiza utilizando una especie de navaja con la cual se realizan pequeños cortes en la piel en formas de líneas como si fueran vellos. Estos cortes son muy superficiales en la capa de la epidermis de la piel.</p>-->
-                                    <button type="button" class="btn btn-outline-info fw-lighter">Más Información</button>
                                 </div>
+                                <button type="button" class="btn btn-outline-info btn-sm p-0 m-2" data-bs-toggle="modal" data-bs-target="#mcrbldng">Más Información</button>
                             </div>
                         </div>
         
@@ -274,8 +267,8 @@
                                     <h6 class="card-title text-primary">Cejas hibridas</h4>
                                     <h6 class="card-title text-secondary"><b>$2,500.00</b></h5>
                                     <!--<p class="fw-lighter">Es el uso en combinación de la técnica microshading y microblading para obtener un resultado de cejas naturales con un color más intenso.</p>-->
-                                    <button type="button" class="btn btn-outline-info fw-lighter">Más Información</button>
                                 </div>
+                                <button type="button" class="btn btn-outline-info btn-sm p-0 m-2" data-bs-toggle="modal" data-bs-target="#hbrds">Más Información</button>
                             </div>
                         </div>
         
@@ -283,16 +276,307 @@
                 </div>
                 
             </div>
-
             
-
-
         </div>
     </section>
 
-
-
 </main>
+
+
+<!-- Modales -->
+ <!-- Modals Masajes-->
+ <div class="modal fade" id="bmrccl" tabindex="-1" aria-hidden="true">
+     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+         <div class="modal-content">
+             <div class="modal-header">
+                 <h5 class="modal-title">Bio Masaje Reductivo Corporal de Cavitación y Lipolaser</h5>
+                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+             </div>
+             <div class="modal-body">
+                 <p>Su principal ventaja es que ofrece la posibilidad de conseguir los mismos resultados que una
+                     liposucción, pero sin la necesidad de una intervención quirúrgica, por eso cada vez más personas
+                     prefieren la cavitación como alternativa indolora, sin anestesia y muy efectiva, y sin dejar ningún
+                     tipo de señal o cicatriz en la piel.</p>
+                 <p>Los ultrasonidos de la cavitación generan pequeñas burbujas en las células de grasa que implosionan,
+                     provocando la rotura de estas células que se convierten en líquido. este líquido es expulsado
+                     mediante la orina y el sistema linfático. </p>
+                 <p>BENEFICIOS: </p>
+                 <ul>
+                     <li>Mejora la circulación sanguínea.</li>
+                     <li>Elimina toxinas y líquidos cuando se combina con el drenaje linfático.</li>
+                     <li>Aumenta el tono y la elasticidad de los tejidos, es decir, tonifica los músculos.</li>
+                     <li>Ayuda a regular el tránsito intestinal.</li>
+                     <li>Elimina celulitis y la piel de naranja.</li>
+                     <li>Mejora la elasticidad y el aspecto de la piel.</li>
+                     <li>Activa la producción de colágeno.</li>
+                 </ul>
+             </div>
+             <div class="modal-footer">
+                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                 <button type="button" class="btn btn-primary">Agendar Cita</button>
+             </div>
+         </div>
+     </div>
+ </div>
+
+ <div class="modal fade" id="mr" tabindex="-1" aria-hidden="true">
+     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+         <div class="modal-content">
+             <div class="modal-header">
+                 <h5 class="modal-title">Masaje Relajante</h5>
+                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+             </div>
+             <div class="modal-body">
+                 <p>Estimula la circulación sanguínea, ayuda a descontracturar los músculos y descarga la tensión que se
+                     acumula en ellos. </p>
+                 <p>Este beneficio permite aliviar el dolor que se localiza en la espalda y en la cabeza por causa
+                     tensional, además de combatir la rigidez corporal.</p>
+                 <p>Por apertura y tiempo limitado incluimos radiofrecuencia y vacum los cuales acelerarán la perdida de
+                     grasa en la parte del abdomen.</p>
+             </div>
+             <div class="modal-footer">
+                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                 <button type="button" class="btn btn-primary">Agendar Cita</button>
+             </div>
+         </div>
+     </div>
+ </div>
+
+ <div class="modal fade" id="prstrp" tabindex="-1" aria-hidden="true">
+     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+         <div class="modal-content">
+             <div class="modal-header">
+                 <h5 class="modal-title">Presoterapia</h5>
+                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+             </div>
+             <div class="modal-body">
+                 <p>Este tratamiento estético favorece la oxigenación del cuerpo y disminuye la tensión sanguínea, a la
+                     vez que nutre las células del organismo, estimula la eliminación de toxinas de forma natural y
+                     proporciona una agradable sensación de bienestar.</p>
+                 <p>Por apertura, incluimos un masaje para pies cansados y masaje para la disminución de celulitis y
+                     varices.</p>
+             </div>
+             <div class="modal-footer">
+                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                 <button type="button" class="btn btn-primary">Agendar Cita</button>
+             </div>
+         </div>
+     </div>
+ </div>
+
+ 
+<!-- Modals Faciales-->
+<div class="modal fade" id="rf3d" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Radiofrecuencia facial 3d</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <ul>
+                    <li>Estimula la producción de manera acelerada de nuestro colágeno interno para una mayor
+                        elasticidad de la piel.</li>
+                    <li>Elimina las arrugas, devolviéndole al rostro la juventud perdida.</li>
+                    <li>Activa la circulación y devuelve toda la luminosidad a la piel.</li>
+                    <li>Anti-acné.</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Agendar Cita</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="bfml" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Bioterapias faciales con mascara led</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <ul>
+                    <li>Devuelve el equilibrio de la piel.</li>
+                    <li>Aumenta la hidratación en profundidad.</li>
+                    <li>Revitaliza.</li>
+                    <li>Reduce la inflamación y el enrojecimiento.</li>
+                    <li>Anti-acné.</li>
+                    <li>Reduce el tamaño de poros.</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Agendar Cita</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="mlf" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Mascarillas de limpieza facial</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Una dermis limpia lucirá más bonita, joven y suave. Es fundamental mantener el hábito de eliminar las
+                    células muertas y la suciedad del rostro para evitar arrugas, granitos o que se vea opaca.</p>
+                <p>Con nuestras mascarillas usted obtendrá los siguientes beneficios:</p>
+                <ul>
+                    <li>Regular la secreción de grasa de la cara.</li>
+                    <li>Prevenir la obstrucción de los poros y, como consecuencia, la aparición de puntos negros y
+                        granitos.</li>
+                    <li>Eliminar las células muertas.</li>
+                    <li>Combatir los radicales libres que aceleran el envejecimiento.</li>
+                    <li>Permitir una mayor penetración de la cremas y mascarillas.</li>
+                    <li>Evitar infecciones por bacterias.</li>
+                    <li>Lucir más joven y radiante.</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Agendar Cita</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modals Depilación-->
+<div class="modal fade" id="dplcn" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Depilación</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <ul>
+                    <li>AXILA</li>
+                    <li>CARA</li>
+                    <li>PIERNAS</li>
+                </ul>
+                <p>Los precios pueden variar de acuerdo al servicio que requiera el cliente</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Agendar Cita</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modals Cejas y Pestañas-->
+<div class="modal fade" id="pc" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Pestañas Clásicas</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>La técnica de extensiones de pestañas clásicas consiste en aplicar una sola extensión de pestaña a
+                    una pestaña natural.</p>
+                <p>Es muy importante saber que cuando te aplicas extensiones de pestañas con la técnica clásica, sólo se
+                    aplican tantas extensiones como pestañas naturales saludables tengas.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Agendar Cita</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="ph" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Pestañas Hibridas</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Las pestañas híbridas son una combinación de dos técnicas: pestañas con volumen ( SVS o rusas ) y
+                    extensiones de pestañas individuales clásicas.</p>
+                <p>Las pestañas híbridas dan volumen y longitud; como resultado obtendrás una apariencia pestañas
+                    largas, abundantes, texturizadas y por lo tanto naturales.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Agendar Cita</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="mcrsdng" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Microshading</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Este método consiste en 'sombrear' las cejas, dándoles un aspecto de ceja maquillada, se utiliza para
+                    lograr un efecto sombreado y más intenso.</p>
+                <p>Esta técnica tiene una duración de 12 a 24 meses, el retoque será de 6 a 18 meses por lo que es una
+                    técnica más duradera. El color depende de la pigmentación de tu piel.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Agendar Cita</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="mcrbldng" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Microblading</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Es una técnica de maquillaje para cejas que se realiza utilizando una especie de navaja con la cual
+                    se realizaran pequeños cortes en tu piel en formas de líneas como si fueran vellos. Estos cortes son
+                    muy superficiales en la capa de la epidermis de la piel.</p>
+                <p>Esta técnica tiene menor duración pues la cantidad de pigmento que se aplica es muy poca por tal
+                    motivo tiende a ser absorbido más rápido. En promedio dura de 6 a 12 meses y el retoque puede
+                    realizarse a los 6 meses o el año.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Agendar Cita</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="hbrds" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Cejas Hibridas</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Es el uso en combinación de la técnica microshading y microblading para obtener un resultado de cejas
+                    naturales con un color más intenso.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Agendar Cita</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <!-- Footer -->
 <%- include('partials/footer') %>
