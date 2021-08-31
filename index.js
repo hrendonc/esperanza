@@ -7,8 +7,8 @@ app.use(express.urlencoded({ extended: false })); // Procesar el formulario medi
 app.use(express.json()); // Enviar datos a travez de JSON
 
 // Config
+const PORT = process.env.PORT || 3000;
 require('dotenv').config(); //Variables de entorno
-app.set('port', process.env.PORT || 3000);  //Puerto
 app.set('view engine', 'ejs');  //Motor de plantillas
 app.set('views', __dirname + '/views'); //Ruta
 
@@ -38,7 +38,6 @@ app.use((req, res, next) =>{
 });
 
 // Listen
-const puerto = app.get('port');
-app.listen(puerto, ()=>{
-    console.log('Escuchando en puerto', puerto);
+app.listen(PORT, ()=>{
+    console.log('Escuchando en puerto ', PORT);
 });
