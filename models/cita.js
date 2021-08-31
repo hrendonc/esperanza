@@ -6,7 +6,7 @@ const citaSchema = new Schema({
   nombre:  String,
   telefono: String,
   servicio: String,
-  fecha: Date
+  fecha: String
 });
 
 // Crear el modelo

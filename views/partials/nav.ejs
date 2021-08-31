@@ -35,6 +35,7 @@
         </li>
 
         <li class="nav-item">
+            <!--<a class="nav-link px-3" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">Citas</a>-->
             <a class="nav-link px-3" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">Citas</a>
         </li>
 
@@ -57,37 +58,26 @@
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Programa tu cita</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Programa tu cita</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
 
-            <form action="">
+      <form action="/citas" class="my-2" method="POST">
+        <div class="container">
+          <input class="form-control my-2" required type="text" name="nombre" id="" placeholder="Ingrese su nombre completo">
+          <input class="form-control my-2" required type="number" name="telefono" id="" placeholder="Ingrese su número de teléfono">
+          <input class="form-control my-2" required type="text" name="servicio" id="" placeholder="Ingrese el servicio que desea">
+          <input class="form-control my-2" required type="datetime-local" name="fecha" id="" placeholder="Ingrese la fecha">
+          <div class="d-grid gap-2">
+            <button class="btn btn-dark" type="submit">Agendar Cita</button>
+          </div>
+        </div>        
+        
+      </form>
 
-                <div class="modal-body">          
-                    
-                    <div class="mb-3">
-                        <label class="form-label">Nombre completo</label>
-                        <input required type="email" class="form-control" id="nombre">
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label">Teléfono</label>
-                        <input required type="email" class="form-control" id="telefono">
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label">Fecha</label>
-                        <input required type="datetime-local" class="form-control" id="fecha">
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                    <button type="submit" class="btn btn-primary">Agendar cita</button>
-                </div>
-
-        </form>
-
-        </div>
     </div>
+  </div>
 </div>
