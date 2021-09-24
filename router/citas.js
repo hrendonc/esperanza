@@ -7,9 +7,8 @@ router.get('/', async(req, res)=>{
     try {
         //const getCitas = await Cita.find()
 
-        res.render('citas', {title:'CRUD - Citas'});
+        res.render('citas', {title:'Admin - Citas'});
 
-        //console.log(getCitas);
     } catch (e) {
         
     }
@@ -19,8 +18,8 @@ router.post('/', async (req, res)=>{
     const body = req.body;
     try {
         console.log(body);
-        const citaDB = new Cita(body)
-        await citaDB.save()
+        //const citaDB = new Cita(body)
+        //await citaDB.save()
         res.redirect('/');
     } catch (error) {
         console.log(error);
